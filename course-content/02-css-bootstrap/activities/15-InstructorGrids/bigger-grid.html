@@ -1,0 +1,149 @@
+<!-- Bootstrap Grid Demo -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style type="text/css">
+    .red-border {
+      border-style: solid;
+      border-color: red;
+    }
+    .blue-border {
+      border-style: solid;
+      border-color: blue;
+    }
+    .orange-border {
+      border-style: solid;
+      border-color: orange;
+    }
+    .green-border {
+      border-style: solid;
+      border-color: green;
+    }
+    p {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Our rows function in containers (grid created). -->
+  <!--   <div class="container-fluid"> -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+        <p>I'm in Column 1 of 1. I stretch the entire width...... Woah!</p>
+      </div>
+      <!-- end row -->
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <p>I'm in Column 1 of 2</p>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <p>I'm in Column 2 of 2</p>
+      </div>
+  <!-- End Second Row -->
+    </div>
+    <!-- Third Row -->
+    <div class="row">
+      <div class="col-md-3">
+          <p>I'm in Column 1 of 4</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 2 of 4</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 3 of 4</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 4 of 4</p>
+      </div>
+      <!-- End Third Row -->
+    </div>
+    <!-- fourth Row -->
+    <div class="row red-border">
+      <div class="col-md-3">
+          <p>I'm in Column 1 of 3</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 2 of 3</p>
+      </div>
+      <div class="col-md-6">
+          <p>I'm in Column 3 of 3</p>
+      </div>
+      <!-- end fourth Row -->
+    </div>
+
+    <!-- Fifth Row -->
+    <div class="row">
+      <div class="col-md-2">
+          <p>I'm in Column 1 of 5</p>
+      </div>
+      <div class="col-md-2 ">
+          <p>I'm in Column 2 of 5</p>
+      </div>
+      <div class="col-md-2">
+          <p>I'm in Column 3 of 5</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 4 of 5</p>
+      </div>
+      <div class="col-md-3">
+          <p>I'm in Column 5 of 5</p>
+      </div>
+      <!-- end Fifth Row -->
+    </div>
+    <!-- Sixth Row -->
+    <div class="row">
+      <div class="col-md-6 red-border">
+          <p>I'm in Column 1 of 2</p>
+      </div>
+      <div class="col-md-6 blue-border">
+        <p>I'm in Column 1 of 2 I take up all 6 columns</p>
+        <div class="row orange-border">
+          <div class="col-md-6 ">
+            <p>I'm in Column 1 of 3 in a sub row and</p>
+          </div>
+          <div class="col-md-3 green-border">
+            <p>I'm in Column 2 of 3</p>
+          </div>
+          <div class="col-md-3 green-border">
+            <p>I'm in Column 3 of 3</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end Sixth Row Row -->
+    </div>
+    <!-- Seventh Row -->
+    <div class="row">
+      <div class="col-md-12 ">
+        <!--class="text-center" belongs to Bootstrap  -->
+            <p class="text-center">I'm in Column 1 of 1 - so lonely - taking up the whole row</p>
+      </div>
+    </div>
+
+<!-- end container -->
+  </div>
+
+</body>
+
+</html>

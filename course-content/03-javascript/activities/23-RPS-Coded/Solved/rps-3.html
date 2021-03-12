@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 3</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var computerChoices = ["r", "p", "s"];
+
+      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
+
+      for (var i = 0; i < 10; i++) {
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        // Test if it's working correctly
+        console.log(computerGuess);
+
+        // Collect the user's response and convert to lower case.
+        var userGuess = prompt("Enter r, p, or s to play!");
+        userGuess = userGuess.toLowerCase();
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        for (var i = 0; i < 10; i++){
+            var userChoice = prompt("Rock, Paper, or Scissors? Type r, p, or s for your choice");
+            var compChoice = compOptions[Math.floor(Math.random() * compOptions.length)];
+            if (userChoice === compChoice){
+                ties += 1;
+                alert("This is a draw!")
+            }
+            else if (userChoice === "r"){
+                if (compChoice === "s"){
+                    wins += 1;
+                    alert("You win!");
+                }
+                if (compChoice === "p"){
+                    losses += 1;
+                    alert("You lost!");
+                }
+            }
+            else if (userChoice === "s"){
+                if (compChoice === "p"){
+                    wins += 1;
+                    alert("You win!");
+                }
+                if (compChoice === "r"){
+                    losses += 1;
+                    alert("You lost!");
+                }
+            }
+            else if (userChoice === "p"){
+                if (compChoice === "r"){
+                    wins += 1;
+                    alert("You win!");
+                }
+                if (compChoice === "s"){
+                    losses += 1;
+                    alert("You lost!");
+                }
+            }
+        }
+        alert("You won: " + wins + " times!\nYou lost: " + losses + " times!\nYou tied: " + ties + " times!");
+      }
+    </script>
+  </body>
+</html>
