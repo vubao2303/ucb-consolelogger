@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Array Activity - Unsolved</title>
-  </head>
-  <body>
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>Array Activity - Unsolved</title>
+</head>
 
-    <script type="text/javascript">
+<body>
 
-      // Fill in the question marks with what the output will be.
-      var animals = ["parrot", "cat", "dog"];
+  <h1>Open the console to see the magic!</h1>
 
-      // ???
-      console.log(animals.length);
+  <script type="text/javascript">
 
-      // ???
-      console.log(animals[1]);
+    // Fill in the question marks with what the output will be.
+    var animals = ["parrot", "cat", "dog"];
 
-      // ???
-      console.log(animals[2]);
+    // ???
+    // 3
+    console.log(animals.length);
 
-      // ???
-      console.log(animals[0]);
+    // ???
+    // cat 
+    console.log(animals[1]);
 
-      // ???
-      console.log(animals[animals.length]);
+    // ???
+    // dog 
+    console.log(animals[2]);
 
-      // ???
-      console.log(animals[animals.length - 1]);
+    // ???
+    // parrot 
+    console.log(animals[0]);
 
-      // ???
-      console.log(animals.indexOf("bear"));
+    // ???
+    // undefine 
+    console.log(animals[animals.length]);
 
-      // ???
-      console.log(animals.indexOf("parrot"));
+    // ???
+    // dog 
+    console.log(animals[animals.length - 1]);
 
-    </script>
+    // ???
+    // it will come out - 1 because that is how indexOf works. ONLY INDEX OF 
+    console.log(animals.indexOf("bear"));
 
-  </body>
+    // ???
+    // 0 
+    console.log(animals.indexOf("parrot"));
+
+    var arr = [1, 2, 3, 16, 9, 80, 90]
+
+    var anotherArr = [0, 1, 2, 4, 6, 5, 3]
+    // function findMedian(arr) {
+
+    //   var sortArr = arr.sort((a, b) => { a - b })
+    //   console.log(sortArr)
+
+    //   var mid = Math.floor(sortArr.length / 2)
+    //   console.log(sortArr.length)
+    //   console.log(mid)
+
+    //   if (sortArr.length % 2 === 0) {
+
+    //     var sum = (sortArr[mid] + sortArr[mid + 1]) / 2
+    //     console.log(sum)
+    //     return sum;
+    //   }
+    //   else {
+    //     console.log(sortArr)
+    //     return sortArr[mid]
+    //   }
+    // }
+
+    function findMedian(arr) {
+
+      var sortArr = arr.sort((a, b) => a - b)
+      console.log(sortArr)
+
+      var mid = Math.floor(sortArr.length / 2)
+
+      if (sortArr.length % 2 === 0) {
+
+        var sum = (sortArr[mid] + sortArr[mid - 1]) / 2
+
+        return sum;
+      }
+      else {
+
+        return sortArr[mid]
+      }
+    }
+    console.log(findMedian(arr))
+    console.log(findMedian(anotherArr))
+
+  </script>
+
+</body>
+
 </html>

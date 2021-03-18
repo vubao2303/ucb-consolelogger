@@ -129,7 +129,6 @@ console.log(stamentTwo.concat("", knownFor))
 // much like you did for the console logs and `fullName`
 
 
-
 // Create a variable `statementThree` and assign it a value of a string:
 // "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
 //
