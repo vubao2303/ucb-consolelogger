@@ -4,28 +4,27 @@
 // Character One
 
 // make a variable called `characterOneName` and assign it to be a string of "Mr. Farley"
-
+let characterOneName = "Mr.Farly"
 
 // assign a new value "Ms. Farley" to the variable `characterOneName`
-
+characterOneName = "Ms.Farley"
 
 // make a new variable `characterOneAge` and assign it an age of your choice
-
+let characterOneAge = 5
 
 // reassign the variable `characterOneAge` to be the integer 6
-
+characterOneAge = 6
 
 // make a variable called `characterOneSalary` and assign it to be the number 100000.00
-
-
+let characterOneSalary = 100000
 // make a variable called `characterOneProfession` and assign it a value of "Web Developer"
-
+let characterOneProfession = "Web Developer"
 
 // make a variable called `characterOneSpecies` and assign it a value of "cat"
 
-
+let characterOneSpecies = "cat"
 // make a variable called `characterOneLocation` and assign it a value of "San Francisco, CA"
-
+let characterOneLocation = "San Francisco, CA"
 
 // make a variable called `characterOneRent` and assign it to be the number 2000.00
 
@@ -83,23 +82,29 @@
 // Conditionals
 
 // Create an if statement to check if `characterOneName` is "Mr. Farley"
+if (characterOneName === "Mr. Farley") {
+    console.log("hello Mr. Farley")
+}
+
+// If it does, console log "hello Mr. Farley"
 
 
-    // If it does, console log "hello Mr. Farley"
-
-    
 // Else, check if `characterOneName` is "Ms.Farley"
+else if (characterOneName === "Ms.Farley") {
+    console.log("hello Ms. Farley")
+}
+
+// If it does, console log "hello Ms. Farley"
 
 
-    // If it does, console log "hello Ms. Farley"
-
-    
 // Else, we know if the code reaches this point that `characterOneName` is neither "Mr. Farley" nor "Ms. Farley"
-
+else {
+    console.log("hello Stranger")
+}
 
     // So console.log "Hello stranger"
 
-    
+
 
 
 // Create an if statement to check if `characterOneAge` is greather than `characterTwoAge`
@@ -107,7 +112,7 @@
 
     // If it is, console log `characterOneName` prepended to the string " is older"
 
-    
+
 // Else, console log `characterTwoName` prepended to the string " is older"
 
 
@@ -120,7 +125,7 @@
 
     // If both are true, console log "Cross Country Friends!"
 
-    
+
 // Else, console log "Local Friends!"
 
 
@@ -131,7 +136,7 @@
 
     // If it is, console log `characterOneName` prepended to the string " is a high roller!"
 
-    
+
 // Else, console log `characterTwoName` prepended to the string " is a high roller!"
 
 
@@ -144,7 +149,7 @@
 
     // If one of them is true, console log "Hey look! One of them is in the tech industry!"
 
-    
+
 // Else, console log "Aww, I wanted to meet someone in tech :("
 
 
