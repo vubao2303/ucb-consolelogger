@@ -133,10 +133,16 @@ console.log(pCount)
 // create a new empty array named uniqueFruits
 var uniqueFruits = [];
 for (let i = 0; i < fruits.length; i++) {
-
+  if (fruits[i] !== fruits[i++]) {
+    uniqueFruits.push(fruits[i])
+  }
 }
 
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
+
+// for (let i = 0; i < fruits.length; i++) {
+//   if (fruits[i] === fruits[i])
+// }
 // you should a shorter array without repeated values
 
 
@@ -162,43 +168,79 @@ var twoDimArray = [
 // another seperator for your convenience
 console.log("     first array      ");
 // iterate through the first array inside twoDimArray and console log all the numbers less than 25
-
+for (let i = 0; i < twoDimArray[0].length; i++) {
+  if (twoDimArray[0][i] < 25) {
+    console.log(twoDimArray[0][i])
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     second array      ");
 // iterate through the second array inside twoDimArray and console log all the numbers less than 25
-
+for (let i = 0; i < twoDimArray[1].length; i++) {
+  if (twoDimArray[1][i] < 25) {
+    console.log(twoDimArray[1][i])
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     third array      ");
 // iterate through the third array inside twoDimArray and console log all the numbers less than 25
-
+for (let i = 0; i < twoDimArray[2].length; i++) {
+  if (twoDimArray[2][i] < 25) {
+    console.log(twoDimArray[1][i])
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     fourth array      ");
 // iterate through the fourth array inside twoDimArray and console log all the numbers less than 25
-
+for (let i = 0; i < twoDimArray[3].length; i++) {
+  if (twoDimArray[3][i] < 25) {
+    console.log(twoDimArray[1][i])
+  }
+}
 
 
 // another seperator for your convenience
 console.log("     fifth array      ");
 // iterate through the fifth array inside twoDimArray and console log all the numbers less than 25
 
-
+for (let i = 0; i < twoDimArray[4].length; i++) {
+  if (twoDimArray[4][i] < 25) {
+    console.log(twoDimArray[1][i])
+  }
+}
 
 // another seperator for your convenience
+// this doesn't work! HELP! 
 console.log("     odd numbers      ");
 // iterate through twoDimArray and the arrays inside of it and console log all the odd numbers
-
+for (let i = 0; i < twoDimArray.length; i++) {
+  console.log(twoDimArray[i])
+  for (let j = 0; j < twoDimArray[i].length; i++) {
+    if (twoDimArray[i][j] % 2 !== 0) {
+      console.log(twoDimArray[i][j])
+    }
+  }
+}
 
 
 // another seperator for your convenience
+// if the above work change this one too 
 console.log("     sum of multiples of 3      ");
 // iterate through twoDimArray and the arrays inside of it and
 // console log the sum of all the numbers that are a multiple of 3
-
+for (let i = 0; i < twoDimArray.length; i++) {
+  console.log(twoDimArray[i])
+  for (let j = 0; j < twoDimArray[i].length; i++) {
+    if (twoDimArray[i][j] % 3 === 0) {
+      console.log(twoDimArray[i][j])
+    }
+  }
+}
 
 
