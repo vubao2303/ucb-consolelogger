@@ -1,8 +1,14 @@
 // define a function "warble" that takes in a string as an argument,
 // appends " arglebargle" to the end of it, and returns the result
 
+let warble = "";
+warble.append("arglebargle")
 
-
+function warble(str) {
+  str.append("arglebargle")
+  return str
+}
+cosole.log(warble("arglebargle"))
 
 // console log the result of calling your "warble" function with the argument "hello"
 

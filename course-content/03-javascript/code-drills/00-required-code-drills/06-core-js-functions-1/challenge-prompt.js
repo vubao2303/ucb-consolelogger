@@ -37,18 +37,24 @@ function hello() {
 
 // call your "hello" function
 
-
+hello()
 // define a function "popUp" that creates an alert that says "This is an alert."
+function popUp() {
+  alert("this is an alert");
+};
 
-
-
+// popUp();
 // define a function "noPopUp" that creates an alert that says "Okay, you won't get a pop up."
-
-
+function noPopUp() {
+  alert("Ok, no pop up")
+};
 
 // define a function "goodDay" that creates a confirm dialogue asking the user if they are having a nice day
 // and uses your "log" function to display the response
-
+function goodDay() {
+  confirm("are you having a good day?")
+};
+goodDay();
 
 
 // call your "goodDay" function
@@ -58,24 +64,38 @@ function hello() {
 // if they answer yes, call upon your "popUp" function; otherwise, call upon your "noPopUp" function
 
 
-
+function userPopUp() {
+  let response = confirm("would you like a pop up?")
+  if (response) {
+    popUp();
+  }
+  else {
+    noPopUp();
+  }
+}
 // call your "userPopUp" function
-
+userPopUp();
 
 // define a function "userName" that prompts the user for their name and then 
 // uses your "log" function to display the response
-
+function userName() {
+  let name = prompt("what is your name")
+  log(name)
+}
 
 
 // call your "userName" function
-
+userName();
 
 // define a function "favoriteFruit" that prompts the user for their favorite fruit
 // and the creates an alert that displays the response
 
-
+function favortiteFruit() {
+  let rep = prompt("what is your favorite fruit");
+  alert("you like " + rep);
+};
 
 // call your "favoriteFruit" function
-
+favortiteFruit();
 
 
