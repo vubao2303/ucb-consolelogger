@@ -1,29 +1,38 @@
 // define a function "fun" that console logs "Functions are FUN!"
 
 
-
+function fun() {
+  console.log("FuntionareFun")
+}
 // before moving on, open index.html and see what console logs have been made.
 // why doesn't "Functions are FUN! appear yet?"
 /*
 
 Your Answer here
-
+because I havent call it 
 */
 
 
 // define a function "thirtySeven" that console logs the sum of 18 and 19
-
-
+function thirtySeven() {
+  console.log(18 + 19)
+}
 
 // call two functions you've defined so far
-
+fun();
+thirtySeven()
 
 // define a function "log" that takes in an argument and console logs that argument
-
+function log(arg) {
+  console.log(arg)
+}
+log("banana")
 
 
 // define a function "hello" that calls on the "log" function to console log "Hello World"
-
+function hello() {
+  log("hello World")
+}
 
 
 // call your "hello" function
