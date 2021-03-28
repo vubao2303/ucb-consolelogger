@@ -44,43 +44,45 @@ Step One:
 
 Q: What are you going to do? 
 
-A: 
+A: create a variable output call sum 
 
 Q: How are you going to do it? 
 
-A: 
+A: var sum = 0;
 
 Q: Why are you going to do it? 
 
-A: 
+A: to return the output 
+
 
 Step Two: 
 
+
 Q: What are you going to do? 
 
-A: 
+A: Iterate throught the arr 
 
 Q: How are you going to do it? 
 
-A: 
+A: with a for loop starting with the first index, going through the lenght of the array, and increment index 
 
 Q: Why are you going to do it? 
 
-A: 
+A: to check every element in the array 
 
 Step Three: 
 
 Q: What are you going to do? 
 
-A: 
+A: add the value of each index in the array together 
 
 Q: How are you going to do it? 
 
-A: 
+A: sum += arr[i]
 
 Q: Why are you going to do it? 
 
-A: 
+A: to find the output and return it outside of the for loop 
 
 
 

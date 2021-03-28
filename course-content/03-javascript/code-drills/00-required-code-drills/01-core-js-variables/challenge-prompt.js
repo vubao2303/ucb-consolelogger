@@ -168,22 +168,21 @@ function sum(n) {
   var sume = 0;
 }
 sum(3);
-console.log(sum(3));
+console.log(sum(3))
 
 
-var sumSecond = 0;
-function sumTwo(n) {
-  sumSecond = (((n / 2) * n) + n);
-  return sumSecond
+var sumTwo 
+function sumTwo(n){
+  sum = ((n / 2) * n) + n
+  return sum
 }
-console.log(sumTwo(3))
-
+  
 
 
 var arr = [1, 2, 3];
 var sun = 0;
 function sumAll(arr) {
-  for (let i = 0; i < arr.length; i++) {
+  for (i = 0; i < arr.length; i++) {
     sun += arr[i];
 
   }
@@ -195,17 +194,6 @@ console.log(sumAll(arr))
 //   alert("hello");
 // }
 // console.log(sayHello())
-
-function nthEven(n) {
-  return (n - 1) * 2
-}
-console.log(nthEven(100))
-
-
-// int nthEven(int n) {
-//   // your code here
-//   return (n-1)*2 ;
-// }
 
 
  //1 + 2 +3 = 6
