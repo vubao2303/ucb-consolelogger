@@ -47,3 +47,6 @@ SELECT pet_name FROM people;
 
 SELECT pet_name FROM people
 WHERE name = "Jerome";
+
+
+SELECT first_name, last_name FROM 
