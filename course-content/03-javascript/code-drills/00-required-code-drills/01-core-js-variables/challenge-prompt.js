@@ -171,12 +171,12 @@ sum(3);
 console.log(sum(3))
 
 
-var sumTwo 
-function sumTwo(n){
+var sumTwo
+function sumTwo(n) {
   sum = ((n / 2) * n) + n
   return sum
 }
-  
+
 
 
 var arr = [1, 2, 3];
