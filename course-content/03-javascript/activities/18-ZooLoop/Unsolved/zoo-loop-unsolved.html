@@ -16,13 +16,6 @@
     var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
     var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
     // for (var i = 0; i < zooAnimals.length; i++) { console.log(zooAnimals[i]) }
-    // Rewrite the following code to print all of the animals using a for-loop.
-    // console.log(zooAnimals[0]);
-    // console.log(zooAnimals[1]);
-    // console.log(zooAnimals[2]);
-    // console.log(zooAnimals[3]);
-
-    // do this the function way: 
 
     function logArray(arr) {
       for (var i = 0; i < arr.length; i++) {
@@ -42,7 +35,11 @@
       console.log("I am " + i)
     }
 
+    function getRandom(num) {
+      return Math.floor(Math.random() * num)
 
+    }
+    console.log(getRandom(7))
 
 
 
