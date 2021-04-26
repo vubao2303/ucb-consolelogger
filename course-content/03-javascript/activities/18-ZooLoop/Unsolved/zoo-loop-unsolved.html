@@ -14,6 +14,7 @@
 
     // Array of zoo animals.
     var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
     // for (var i = 0; i < zooAnimals.length; i++) { console.log(zooAnimals[i]) }
     // Rewrite the following code to print all of the animals using a for-loop.
     // console.log(zooAnimals[0]);
@@ -24,12 +25,28 @@
     // do this the function way: 
 
     function logArray(arr) {
-      for (var i = 0; i < zooAnimals.length; i++) {
-        console.log(zooAnimals[i]);
+      for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+        if (arr[i][0] === "c" || arr[i][0].toLowerCase() === "o") {
+          // alert("Start with c or o")
+          console.log(arr[i][0])
+        }
       };
     }
 
-    logArray(zooAnimals)
+    logArray(zooAnimals);
+    logArray(myFarm)
+
+    // another loop 
+    for (let i = 0; i < 5; i++) {
+      console.log("I am " + i)
+    }
+
+
+
+
+
+
   </script>
 
 </body>
