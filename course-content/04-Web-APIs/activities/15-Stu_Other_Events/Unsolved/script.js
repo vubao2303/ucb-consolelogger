@@ -1,10 +1,14 @@
-var eventType = document.querySelector("#event-type"); 
+var eventType = document.querySelector("#event-type");
 var mouseEventsEl = document.querySelector("#click-events");
 var keyEventsEl = document.querySelector("#key-events");
 
 function toggleDisplay(event) {
+
+  console.log(event.target);
+  console.log("Value : ", event.target.value);
+
   var value = event.target.value;
-  if(value === "keydown") {
+  if (value === "keydown") {
     mouseEventsEl.classList.add("hide");
     keyEventsEl.classList.remove("hide");
   }
@@ -13,3 +17,40 @@ function toggleDisplay(event) {
     keyEventsEl.classList.add("hide");
   }
 }
+eventType.addEventListener("change", toggleDisplay);
+
+
+function farley(event) {
+  console.log("***********");
+  console.log("Keydown Event");
+  console.log(event);
+  var keyPress = event.key;
+  var keyCode = event.code;
+  document.querySelector("#key").textContent = keyPress;
+  document.querySelector("#code").textContent = keyCode;
+  document.querySelector("#status").textContent = "KEYDOWN Event";
+}
+
+function keyup(event) {
+  console.log("***********");
+  console.log("KeyUp Event");
+  console.log(event);
+  document.querySelector("#status").innerHTML = "KEYUP Event";
+}
+
+function click(event) {
+  console.log("***********");
+  console.log("Click Event");
+  console.log(event);
+  var target = event.target.textContent;
+  var x = event.clientX;
+  var y = event.clientY;
+  document.querySelector("#target").textContent = target;
+  document.querySelector("#x").textContent = x;
+  document.querySelector("#y").textContent = y;
+}
+
+document.addEventListener("keydown", keydown);
+document.addEventListener("keyup", keyup);
+document.addEventListener("click", click);
+eventType.addEventListener("change", toggleDisplay);
