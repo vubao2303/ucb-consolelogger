@@ -42,15 +42,29 @@
 
     // Create a Function called "vowelChecker" that takes in a single argument (x).
     // "vowlChecker" logs whether or not the input is a vowel.
-
-
+    function vowelChecker(x) {
+      let vowels = "aeiou"
+      for (let i = 0; i < vowels.length; i++) {
+        if (x === vowels[i]) {
+          console.log(true)
+        }
+        else {
+          (console.log("no vowels here"))
+        }
+      }
+    }
+    // HELP! why did it console logged both? 
     // BONUS
     // Creates a version of "adder" that returns its result. Function is called "adderReturn".
-
+    function adderReturn() {
+      return adder;
+    }
+    // HELP! what are they asking me to do here? 
 
     // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
-
-
+    function multiplierReturn() {
+      return multiplier;
+    }
     // FUNCTION EXECUTION
     // ================================================================================
 
@@ -76,19 +90,22 @@
 
 
     // Call the vowelChecker function here.
-
+    vowelChecker("a")
 
     console.log("-------------------");
 
 
     // BONUS
     // Call the adderReturn function here and set it equal to a variable. Then log that variable to the console.
-
+    var adderResult = adderReturn()
+    console.log(adderResult);
 
     console.log("-------------------");
 
 
-      // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
+    // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
+    var mulResult = multiplierReturn()
+    console.log(mulResult);
 
   </script>
 

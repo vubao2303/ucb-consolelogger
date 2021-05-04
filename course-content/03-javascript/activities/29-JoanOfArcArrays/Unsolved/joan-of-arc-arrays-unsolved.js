@@ -9,3 +9,6 @@ var joanOfArcInfoValues = [
   "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
   "Stands for French unity and nationalism."
 ];
+
+// HELP, WHAT IS GOING ON HERE ? AND HOW DO I FIX IT ?
+// HOW DOES INDEX OF WORKS//?
