@@ -57,6 +57,10 @@
     function reWriteStats(obj) {
       console.log(obj.make)
     }
+
+    for (var key in car) {
+      console.log(key, car[key]);
+    }
     reWriteStats(car)
     // MAIN PROCESS
     // ==============================================================================
