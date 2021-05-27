@@ -13,7 +13,7 @@
 // mainDiv.lastElementChild.style.fontSize = "50px";
 // mainDiv.firstElementChild.style.color = "orange";
 // mainDiv.lastElementChild.parentElement.style.fontSize = "40px";
-// mainDiv.style.fontSize = "50px";
+// mainDiv.style.fontSize = "40px";
 
 
 
@@ -48,8 +48,16 @@ divMain.childNodes[1].style.textDecoration = "underline";
 divMain.lastElementChild.style.fontSize = "50px"
 
 // * Change its first child element to have a font color of `orange`.
+divMain.firstElementChild.style.color = "orange"
 
 // * Change its last child elements parent to have a font size of `40px`.
+divMain.lastElementChild.parentElement.style.fontSize = "40px";
+// this is the same as this
+// divMain.style.fontSize = "40px"
+
+
+divMain.lastElementChild.style.color = "red"
+
 
 
 
